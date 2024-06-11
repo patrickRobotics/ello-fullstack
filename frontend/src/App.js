@@ -18,9 +18,9 @@ import {
 import DeleteIcon from '@mui/icons-material/Delete';
 import { styled } from '@mui/material/styles';
 import client from './apolloClient';
-import Book from './Book';
+import Book from './components/Book';
 import styles from './App.module.css';  // Import the CSS module
-import Hero from './Hero';
+import Hero from './components/Hero';
 
 const GET_BOOKS = gql`
   query GetBooks {
@@ -102,7 +102,7 @@ const App = () => {
     <Container className={styles.container}>
       <Hero search={search} setSearch={setSearch}  />
       <Grid container spacing={2}>
-      
+
         <Grid item xs="auto">
           <List>
             {currentBooks.map((book, index) => (

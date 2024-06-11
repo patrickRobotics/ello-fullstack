@@ -4,7 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import Root from './App';
-import theme from './theme';
+import theme from './theme/theme';
 import './index.css';
 
 
